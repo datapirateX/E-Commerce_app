@@ -10,6 +10,11 @@ const ProductList = () => {
     <Container>
         <Navbar />
         <Announcement />
+        <Title>Dresses</Title>
+        <FilterContainer>
+            <Filter>filter</Filter>
+            <Filter>filter2</Filter>
+        </FilterContainer>
     </Container>
   )
 }
