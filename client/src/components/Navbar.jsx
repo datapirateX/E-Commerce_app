@@ -11,6 +11,7 @@ const Wrapper = styled.div`
   padding: 10px 20px;
   display: flex;
   align-items: center;
+  
 `;
 const Left = styled.div`
   flex: 1;
@@ -33,6 +34,7 @@ const Right = styled.div`
 `;
 const Language = styled.span`
   font-size: 14px;
+  font-weight: 700;
   cursor: pointer;
   
 `;
@@ -51,6 +53,7 @@ font-weight: bold;
 `
 const MenuItem = styled.div`
 font-size:14px;
+font-weight: 700;
 cursor: pointer;
 `
 
