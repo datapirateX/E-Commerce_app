@@ -28,11 +28,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f5fbfd;
+    
+    
     position: relative;
   
     &:hover ${Info}{
       opacity: 1;
+      border-radius: 20px;
     }
   `;
   
@@ -45,7 +47,7 @@
   `;
   
   const Image = styled.img`
-    height: 75%;
+    height: 95%;
     z-index: 2;
   `;
   

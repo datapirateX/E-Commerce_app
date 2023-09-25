@@ -4,7 +4,7 @@ import { useState } from "react";
 import arrow from "../assets/arrow-left.png";
 import arrow2 from "../assets/arrow-right.png";
 import {sliderItems} from "../data";
-
+import { mobile } from "../responsive";
 
 
 
@@ -15,7 +15,7 @@ const Container = styled.div`
   display: flex;  
   position: relative;
   overflow: hidden;
- 
+  ${mobile({ display: "none" })}
 `;
 
 const Arrow = styled.div`
