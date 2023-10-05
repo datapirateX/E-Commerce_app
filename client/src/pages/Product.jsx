@@ -4,6 +4,7 @@ import Announcement from "../components/Announcement";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Newsletter from "../components/Newsletter";
+import { Remove, Add } from "@material-ui/icons";
 
 
 const Container = styled.div``;
@@ -149,9 +150,9 @@ const Product = () => {
           </FilterContainer>
           <AddContainer>
             <AmountContainer>
-              
+              <Remove />
               <Amount>1</Amount>
-             
+             <Add />
             </AmountContainer>
             <Button>ADD TO CART</Button>
           </AddContainer>

@@ -1,10 +1,11 @@
 import React from 'react'
 import styled from "styled-components"
 import { useState } from "react";
-import arrow from "../assets/arrow-left.png";
-import arrow2 from "../assets/arrow-right.png";
+
 import {sliderItems} from "../data";
 import { mobile } from "../responsive";
+import { ArrowLeftOutlined } from '@material-ui/icons';
+import { ArrowRightOutlined } from '@material-ui/icons';
 
 
 
@@ -20,8 +21,8 @@ const Container = styled.div`
 
 const Arrow = styled.div`
   width: 50px;
-  height: 50px; 
-  background-color: yellow;
+  height: 50px;
+  background-color: #fff7f7;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -35,7 +36,7 @@ const Arrow = styled.div`
   cursor: pointer;
   opacity: 0.5;
   z-index: 2;
-`;
+`; 
 
 const Wrapper = styled.div`
   height: 100%;
@@ -96,27 +97,27 @@ const Slider = () => {
 
   return (
     <Container>
-      <Arrow direction="left" onClick={() => handleClick("left")}>
-        <img src={arrow} alt="" style={{ width: '36px' }} />
-      </Arrow>
-      <Wrapper slideIndex={slideIndex}>
-        {sliderItems.map((item) => (
-          <Slide bg={item.bg} key={item.id}>
-            <ImgContainer>
-              <Image src={item.img} />
-            </ImgContainer>
-            <InfoContainer>
-              <Title>{item.title}</Title>
-              <Desc>{item.desc}</Desc>
-              <Button>SHOW NOW</Button>
-            </InfoContainer>
-          </Slide>
-        ))}
-      </Wrapper>
-      <Arrow direction="right" onClick={() => handleClick("right")}>
-        <img src={arrow2} alt="" style={{ width: '32px' }} />
-      </Arrow>
-    </Container>
+    <Arrow direction="left" onClick={() => handleClick("left")}>
+      <ArrowLeftOutlined />
+    </Arrow>
+    <Wrapper slideIndex={slideIndex}>
+      {sliderItems.map((item) => (
+        <Slide bg={item.bg} key={item.id}>
+          <ImgContainer>
+            <Image src={item.img} />
+          </ImgContainer>
+          <InfoContainer>
+            <Title>{item.title}</Title>
+            <Desc>{item.desc}</Desc>
+            <Button>SHOW NOW</Button>
+          </InfoContainer>
+        </Slide>
+      ))}
+    </Wrapper>
+    <Arrow direction="right" onClick={() => handleClick("right")}>
+      <ArrowRightOutlined />
+    </Arrow>
+  </Container>
   );
 };
 

@@ -3,6 +3,8 @@ import styled from "styled-components";
 import search from "../assets/search.png";
 import cart from "../assets/cart.png"
 import { mobile } from "../responsive";
+import { Search, ShoppingCartOutlined } from "@material-ui/icons";
+import { Badge } from "@material-ui/core";
 
 const Container = styled.div`
   height: 60px;
@@ -58,6 +60,7 @@ font-weight: bold;
 ${mobile({ fontSize: "24px" })}
 `
 const MenuItem = styled.div`
+display: flex;
 font-size:14px;
 font-weight: 700;
 cursor: pointer;
@@ -72,7 +75,7 @@ const Navbar = () => {
             <Language>EN</Language>
             <SearchContainer>
                 <Input />
-                <img src={search} alt="" style={{width: '12px', flex: '1'}}/>
+                <Search />
 
             </SearchContainer>
         </Left>
@@ -81,8 +84,9 @@ const Navbar = () => {
           <MenuItem>REGISTER</MenuItem>
           <MenuItem>SIGN IN</MenuItem>
           <MenuItem>
-              
-          <img src={cart} alt="" style={{width: '24px', flex: '1'}}/>
+              <ShoppingCartOutlined />
+              <Badge badgeContent={4} color="primary"></Badge>
+          
             
           </MenuItem>
         </Right>

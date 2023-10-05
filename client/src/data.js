@@ -1,14 +1,14 @@
 export const sliderItems = [
     {
       id: 1,
-      img: "https://unsplash.com/photos/a-black-and-white-photo-of-a-woman-in-a-black-dress-AeXKHwkBSlc",
+      img: "https://plus.unsplash.com/premium_photo-1661964243697-734d7bd664ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aW5kaWFuJTIwZ2lybHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
       title: "SUMMER SALE",
       desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
       bg: "#F0EBE1",
     },
     {
       id: 2,
-      img: "https://unsplash.com/photos/a-black-and-white-photo-of-a-woman-in-a-black-dress-AeXKHwkBSlc",
+      img: "https://plus.unsplash.com/premium_photo-1661964329971-b295ec89c7c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aW5kaWFuJTIwZ2lybHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
       title: "AUTUMN COLLECTION",
       desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
       bg: "#FBF0F4",

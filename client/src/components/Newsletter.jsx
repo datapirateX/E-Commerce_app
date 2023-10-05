@@ -1,6 +1,7 @@
-import Send from "../assets/email.png"
+
 import styled from "styled-components";
 import { mobile } from "../responsive";
+import { Send } from "@material-ui/icons";
 
 const Container = styled.div`
   height: 40vh;
@@ -55,7 +56,7 @@ const Newsletter = () => {
       <InputContainer>
         <Input placeholder="Your email" />
         <Button>
-          <img src={ Send } alt="" style={{width: "36px"}}/>
+          <Send />
         </Button>
       </InputContainer>
     </Container>
